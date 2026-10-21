@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício Prático JS - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Gerenciador de Lançamentos</h1>
+
+    <section class="resumo">
+      <div class="card">
+        <h2>Total de Itens: <span id="total-itens">0</span></h2>
+      </div>
+      <div class="card">
+        <h2>Valor Total: R$ <span id="valor-total">0.00</span></h2>
+      </div>
+    </section>
+
+    <form id="form-lancamento">
+      <input type="text" id="descricao" placeholder="Descrição (ex: Mercado, Salário)" required>
+      <input type="number" id="valor" step="0.01" placeholder="Valor R$" required>
+      <select id="tipo">
+        <option value="receita">Receita (+)</option>
+        <option value="despesa">Despesa (-)</option>
+      </select>
+      <button type="submit" id="btn-submit">Adicionar</button>
+    </form>
+
+    <div class="filtros">
+      <button data-filtro="todos">Todos</button>
+      <button data-filtro="receita">Receitas</button>
+      <button data-filtro="despesa">Despesas</button>
+      <button id="btn-ordenar">Ordenar por Valor</button>
+    </div>
+
+    <ul id="lista-lancamentos"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.resumo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #2a2a2a;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filtros button {
+  background-color: #3a3a3a;
+  flex: 1;
+}
+
+.filtros button:hover {
+  background-color: #4a4a4a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  background-color: #242424;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+li.receita { border-left: 5px solid #2ecc71; }
+li.despesa { border-left: 5px solid #e74c3c; }
+
+.acoes {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-editar {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-editar:hover {
+  background: #d68910;
+}
+
+.btn-deletar {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-deletar:hover {
+  background: #c0392b;
+}
